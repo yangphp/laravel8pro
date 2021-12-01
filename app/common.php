@@ -23,7 +23,7 @@ function sendMobileYzm($mobile,$yzm_code)
 	$host = "https://dfsns.market.alicloudapi.com";
     $path = "/data/send_sms";
     $method = "POST";
-    $appcode = "ea552e7910cb46b8b14658b38feba74c";
+    $appcode = env('SMS_APP_CODE');
     $headers = array();
 	$httpInfo = array();
     array_push($headers, "Authorization:APPCODE " . $appcode);
